@@ -14,11 +14,11 @@ const TaskSchema: Schema = new Schema(
         todo: {type: String, required: true},
         isDone: {type: Boolean}
     }, 
-    { 
-        collection: 'Tasks',
-        versionKey: false
-    }
+    // { 
+    //     collection: 'Tasks',
+    //     versionKey: false
+    // }
 )
 
 
-export default mongoose.model<TaskModel>('Task', TaskSchema)
+export default mongoose.model<TaskModel>('ApolloTask', TaskSchema)
